@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/Remote_Searchbtn"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/search2"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="멀티탭 컨트롤러"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            /><!--앱 타이틀-->
+
+
+    </RelativeLayout> <!-- 상단 버튼 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/Remote_Templayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="온도"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/Remote_Temparrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/btn_arrow_right" />
+
+            <LinearLayout
+                android:id="@+id/Remote_Tdetaillayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Remote_Temp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/Remote_Temp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ºC"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/> <!-- 구분선 -->
+
+        <LinearLayout
+            android:id="@+id/Remote_Moistlayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="습도"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/Remote_Moisarrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/btn_arrow_right"
+                />
+
+            <LinearLayout
+                android:id="@+id/Remote_Mdetaillayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Remote_Mois1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/Remote_Mois2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/> <!-- 구분선 -->
+
+        <LinearLayout
+            android:id="@+id/Remote_Dustlayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미세먼지"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/Remote_Dustarrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/btn_arrow_right" />
+
+            <LinearLayout
+                android:id="@+id/Remote_Ddetaillayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Remote_Dust1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/Remote_Dust2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="㎍/㎥"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체 제어"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Switch
+                android:id="@+id/Remote_Allcontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1번 콘센트 제어"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Switch
+                android:id="@+id/Remote_1stcontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCDCDC"/> <!-- 구분선 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2번 콘센트 제어"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Switch
+                android:id="@+id/Remote_2ndcontrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
